@@ -6,6 +6,7 @@ class ListsController < ApplicationController
 
   def show
     @list = List.find(params[:id])
+    # raise
   end
 
   def new
@@ -18,7 +19,7 @@ class ListsController < ApplicationController
       redirect_to lists_path
     else
       render :new, status: :unprocessable_entity
-    end 
+    end
   end
 
   private
