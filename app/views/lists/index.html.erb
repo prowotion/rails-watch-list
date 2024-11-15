@@ -1,6 +1,5 @@
-<h1>Save any kind of movies</h1>
+<%= render "banner", h1: "Save any kind of movies", h2: "My lists" %>
 
-<h2>My lists</h2>
 <ul>
 <% @lists.each do |list| %>
   <li><%= link_to list.name, list_path(list) %></li>
